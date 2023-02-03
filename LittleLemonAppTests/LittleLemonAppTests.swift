@@ -14,6 +14,9 @@ final class LittleLemonAppTests: XCTestCase {
         let newMenuItem = MenuItem(Price: 10, Title: "testTitle", Category: .Dessert, Ingredients: [Ingredient.Broccoli])
         
         XCTAssertEqual("testTitle", newMenuItem.Title)
+        XCTAssertEqual(Ingredient.Broccoli, newMenuItem.Ingredients.first)
     }
+    
+    
 
 }
